@@ -34,7 +34,7 @@ outputfilepath = os.path.join ("analysis","result.txt")
 with open (outputfilepath, 'w') as f:
     f.write ("Financial Analysis\n")
     f.write("----------------------------\n")
-    f.write("Total Months:" + str(mycount) + "\n")
+    f.write("Total Months: " + str(mycount) + "\n")
     f.write ("Total: $"+str(mysum)+"\n")
     f.write ("Average  Change: $"+str(averagevar)+"\n")
     f.write ("Greatest Increase in Profits: "+ monthmaxVar+" ($"+  str(maxVar)+")\n")
