@@ -28,11 +28,8 @@ with open (inputpath) as csvfile:
             sumvar += int(row[1])-prevalue  #net sum variation
             prevalue = int(row[1])
             
-        profit.append([row[0],int(row[1])])
-
-averagevar = round(sumvar / (mycount-1),2)
-
-
+averagevar = round(sumvar / (mycount-1),2)  #average variation
+#write to result.txt
 outputfilepath = os.path.join ("analysis","result.txt")
 
 with open (outputfilepath, 'w') as f:
@@ -44,6 +41,7 @@ with open (outputfilepath, 'w') as f:
     f.write ("Greatest Increase in Profits: "+ monthmaxVar+" ($"+  str(maxVar)+")\n")
     f.write ("Greatest Decrease in Profits: "+ monthminVar+" ($"+  str(minVar)+")\n")
 
+#print to terminal
 print("Financial Analysis")
 print("----------------------------")
 print (f"Total Months: {mycount}")
