@@ -6,8 +6,7 @@ mycount = 0
 mysum = 0
 prevalue = 0
 sumvar = 0
-profit =[]
-profitvariance =[]
+
 inputpath = os.path.join("Resources",'budget_data.csv')
 
 with open (inputpath) as csvfile:
