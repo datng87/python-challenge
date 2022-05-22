@@ -1,6 +1,6 @@
 import os
 import csv
-from posixpath import split
+
 us_state_abbrev = {
     'Alabama': 'AL',
     'Alaska': 'AK',
