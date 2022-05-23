@@ -4,13 +4,10 @@ import re
 inputpath = os.path.join("Resources",'paragraph_2.txt')
 totalchar = 0
 totalword = 0
-with open (inputpath, 'r', encoding="utf-8") as f:
+with open (inputpath, 'r', encoding="UTF-8") as f:
     paragraph = f.read()
 
-
-sentence = re.split("(?<=[.!?])[ \n]+", paragraph)
-for i in sentence:
-    print(f"New Sentence    :   {i}")
+sentence = re.split("(?<=[.!?\"])[\n]+", paragraph)
 numsentence = len(sentence)
 mywords = paragraph.split(" ")
 
